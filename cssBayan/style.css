@@ -33,3 +33,15 @@ h1 {
   padding: 2% 0;
   font-size: 2.5rem;
 }
+
+img {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 0;
+}
+
+svg {
+  width: 3rem;
+  height: 3rem;
+}
