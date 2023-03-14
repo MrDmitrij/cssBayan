@@ -25,6 +25,10 @@ h1 {
   margin: 5% auto;
 }
 
+.items svg line {
+  stroke: blue;
+}
+
 .item {
   cursor: pointer;
 }
@@ -53,8 +57,21 @@ svg {
   transition: transform 0.5s;
 }
 
-.items svg line {
-  stroke: blue;
+#switch1:checked ~ .items .item1 img, 
+#switch2:checked ~ .items .item2 img, 
+#switch3:checked ~ .items .item3 img, 
+#switch4:checked ~ .items .item4 img, 
+#switch5:checked ~ .items .item5 img {
+  width: 65%;
+  padding-bottom: 3%;
+}
+
+#switch1:checked ~ .items .item1 svg, 
+#switch2:checked ~ .items .item2 svg, 
+#switch3:checked ~ .items .item3 svg, 
+#switch4:checked ~ .items .item4 svg, 
+#switch5:checked ~ .items .item5 svg {
+  transform: rotate(45deg);
 }
 
 @media (hover: hover) {
