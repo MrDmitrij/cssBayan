@@ -57,13 +57,12 @@ svg {
   transition: transform 0.5s;
 }
 
-#switch1:checked ~ .items .item1 img, 
-#switch2:checked ~ .items .item2 img, 
-#switch3:checked ~ .items .item3 img, 
-#switch4:checked ~ .items .item4 img, 
-#switch5:checked ~ .items .item5 img {
-  width: 65%;
-  padding-bottom: 3%;
+#switch1:checked ~ .items .item1 p, 
+#switch2:checked ~ .items .item2 p, 
+#switch3:checked ~ .items .item3 p, 
+#switch4:checked ~ .items .item4 p, 
+#switch5:checked ~ .items .item5 p {
+  color: black;
 }
 
 #switch1:checked ~ .items .item1 svg, 
@@ -72,6 +71,23 @@ svg {
 #switch4:checked ~ .items .item4 svg, 
 #switch5:checked ~ .items .item5 svg {
   transform: rotate(45deg);
+}
+
+#switch1:checked ~ .items .item1 svg line, 
+#switch2:checked ~ .items .item2 svg line, 
+#switch3:checked ~ .items .item3 svg line, 
+#switch4:checked ~ .items .item4 svg line, 
+#switch5:checked ~ .items .item5 svg line{
+  stroke: black;
+}
+
+#switch1:checked ~ .items .item1 img, 
+#switch2:checked ~ .items .item2 img, 
+#switch3:checked ~ .items .item3 img, 
+#switch4:checked ~ .items .item4 img, 
+#switch5:checked ~ .items .item5 img {
+  width: 65%;
+  padding-bottom: 3%;
 }
 
 @media (hover: hover) {
@@ -100,4 +116,32 @@ svg {
     width: 65%;
     padding-bottom: 3%;
   }
+}
+
+#switch1:checked ~ .items .item1:active p, 
+#switch2:checked ~ .items .item2:active p, 
+#switch3:checked ~ .items .item3:active p, 
+#switch4:checked ~ .items .item4:active p, 
+#switch5:checked ~ .items .item5:active p {
+  color: rgb(30, 216, 20);
+}
+
+#switch1:checked ~ .items .item1:active svg line, 
+#switch2:checked ~ .items .item2:active svg line, 
+#switch3:checked ~ .items .item3:active svg line, 
+#switch4:checked ~ .items .item4:active svg line, 
+#switch5:checked ~ .items .item5:active svg line{
+  stroke: rgb(30, 216, 20);
+}
+
+.item:active p {
+  color: rgb(30, 216, 20);
+}
+
+.item:active svg line {
+  stroke: rgb(30, 216, 20);
+}
+
+.item:active img {
+  opacity: 0.5;
 }
