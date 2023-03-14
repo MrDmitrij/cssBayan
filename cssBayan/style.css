@@ -25,6 +25,10 @@ h1 {
   margin: 5% auto;
 }
 
+.item {
+  cursor: pointer;
+}
+
 .title {
   display: flex;
   justify-content: space-between;
