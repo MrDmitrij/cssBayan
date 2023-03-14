@@ -29,19 +29,54 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 2px solid #e8eae7;
+  border-top: 0.2rem solid #e8eae7;
   padding: 2% 0;
   font-size: 2.5rem;
+  color: blue;
 }
 
 img {
   display: block;
-  width: 80%;
+  width: 0;
   margin: 0 auto;
   padding-bottom: 0;
+  transition: 0.5s;
 }
 
 svg {
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: transform 0.5s;
+}
+
+.items svg line {
+  stroke: blue;
+}
+
+@media (hover: hover) {
+
+  .items svg {
+    display: none;
+  }
+
+  .items svg line {
+    stroke: black;
+  }
+
+  .items:hover p {
+    color: black;
+  }
+
+  .items:hover svg {
+    display: block;
+  }
+
+  .item:hover svg{
+    transform: rotate(45deg);
+  }
+
+  .item:hover img{
+    width: 65%;
+    padding-bottom: 3%;
+  }
 }
